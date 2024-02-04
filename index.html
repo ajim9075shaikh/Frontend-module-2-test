@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header id="head1">
+      <span><h1>todo</h1></span>
+    </header>
+    <main>
+      <div>
+        <form id="task-form">
+          <div id="iv3">
+            <input 
+              type="text"
+              id="task-input"
+              placeholder="Enter Your To-do List task"
+            />
+        </div>
+             <div> <button id="btn1" type="submit">Add</button></div>
+
+          <input type="date" id="due-date-input" />
+          <select id="priority-input">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+          <select id="status-input">
+            <option>To-do</option>
+            <option>In progress</option>
+            <option>Done</option>
+          </select>
+        </form>
+      </div>
+
+      <form id="filter-form">
+        <select id="filter-input">
+          <option value="all">All</option>
+          <option value="to-do">To-do</option>
+          <option value="in-progress">In progress</option>
+          <option value="done">Done</option>
+        </select>
+        <button type="submit">Filter</button>
+      </form>
+
+      <div id="task-counts">
+        <p id="to-do-count">To-do: 0</p>
+        <p id="in-progress-count">In Progress: 0</p>
+        <p id="done-count">Done: 0</p>
+      </div>
+      <input id="search-input" type="text" placeholder="Search tasks" />
+      <div id="task-list">
+        <ul id="task-list"></ul>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
